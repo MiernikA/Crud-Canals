@@ -1,0 +1,134 @@
+body {
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.data-section {
+
+    float: left;
+}
+
+.chart-section {
+
+    float: right;
+}
+
+@media (min-width: 768px) {
+
+    .data-section {
+        width: 55%;
+    }
+
+    .chart-section {
+        width: 35%;
+    }
+}
+
+.input-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efefef;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-canal,
+.input-amount {
+    width: 160px;
+    padding: 10px;
+    margin-right: 25px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-add {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2196f3;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-add:hover {
+    background-color: #0e6db0;
+}
+
+.table {
+    margin-top: 2%;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table-header {
+    padding: 10px;
+    background-color: #efefef;
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    text-align: center;
+}
+
+.table td {
+    padding: 10px;
+    border-bottom: 1px solid #dddddd;
+    text-align: center;
+    max-width: 10px;
+}
+
+.table td input {
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-discard,
+.btn-remove,
+.btn-save,
+.btn-edit {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.btn-discard,
+.btn-remove {
+    background-color: #f44336;
+    color: #ffffff;
+}
+
+.btn-discard:hover,
+.btn-remove:hover {
+    background-color: #a8281d;
+}
+
+
+
+.btn-save {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+.btn-save:hover {
+    background-color: #2e7d30;
+}
+
+.btn-edit {
+    background-color: #2196f3;
+    color: #ffffff;
+}
+
+.btn-edit:hover {
+    background-color: #0e6db0;
+}
