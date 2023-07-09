@@ -26,6 +26,8 @@ To run the project locally, follow these steps:
 1. Navigate to the `frontend` directory.
 2. Install dependencies by running `npm install`.
 3. Start the development server with `npm run dev`.
+4. 
+Once the servers are running, you can access the application by opening your web browser and visiting `http://localhost:3000`.
 
 ## Testing
 
