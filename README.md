@@ -35,7 +35,7 @@ Both the backend and frontend have tests in place.
 ### Backend Tests
 
 1. Navigate to the `backend` directory.
-2. Run the tests using `php artisan test`.
+2. Run the tests using `php artisan test --testsuite Unit`.
 
 ### Frontend Tests
 
