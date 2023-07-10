@@ -16,14 +16,14 @@ To run the project locally, follow these steps:
 
 ### Backend
 
-1. Navigate to the 'root of the project' (backend) directory.
+1. Navigate to the `root of the project` (backend) directory.
 2. Install dependencies by running `composer install`.
 3. Run database migrations using `php artisan migrate`.
 4. Start the Laravel server with `php artisan serve`.
 
 ### Frontend
 
-1. Navigate to the '../react' (frontend) directory.
+1. Navigate to the `../react` (frontend) directory.
 2. Install dependencies by running `npm install`.
 3. Start the development server with `npm run dev`.
 4. Once the servers are running, you can access the application by opening your web browser and visiting `http://localhost:3000`.
