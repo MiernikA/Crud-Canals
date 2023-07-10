@@ -64,5 +64,7 @@ Once the project is up and running, you can access the application in your web b
 
 The project uses a MySQL database. The migration file is included in the project, which creates a `clients` table with columns for `canal` (string) and `amount` (integer).
 
-Larvael is using .env user name 'root', but sometimes is needed to edit user name in config file, when using database on localhost
+Larvael uses the .env `root` username, but sometimes it is necessary to edit the username in the configuration file because the back-end may make errors when trying to migrate.
+
+
 
