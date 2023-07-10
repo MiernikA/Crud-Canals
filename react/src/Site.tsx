@@ -8,6 +8,8 @@ function Site() {
   const [editingIndex, setEditingIndex] = useState<number | null>(null);
   const [newCanal, setNewCanal] = useState('');
   const [newAmount, setNewAmount] = useState('');
+  const [originalCanal, setOriginalCanal] = useState('');
+  const [originalAmount, setOriginalAmount] = useState('');
 
   useEffect(() => {
     fetchData();
@@ -33,7 +35,10 @@ function Site() {
   };
 
   const handleEditUser = (index: number) => {
+    const item = data[index];
     setEditingIndex(index);
+    setOriginalCanal(item.canal);
+    setOriginalAmount(item.amount.toString());
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>, index: number) => {
@@ -47,7 +52,11 @@ function Site() {
     }
   };
 
-  const handleDiscard = () => {
+  const handleDiscard = (index: number) => {
+    const updatedData = [...data];
+    updatedData[index].canal = originalCanal;
+    updatedData[index].amount = parseInt(originalAmount);
+    setData(updatedData);
     setEditingIndex(null);
   };
 
@@ -176,7 +185,7 @@ function Site() {
                 <td>
                   {editingIndex === index ? (
                     <>
-                      <button className="btn-discard" onClick={handleDiscard}>Discard</button>
+                      <button className="btn-discard" onClick={() => handleDiscard(index)}>Discard</button>
                       <button className="btn-save" onClick={() => handleSaveChanges(item)}>Save</button>
                     </>
                   ) : (
