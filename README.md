@@ -18,8 +18,8 @@ To run the project locally, follow these steps:
 
 1. Navigate to the `root of the project` (backend) directory.
 2. Install dependencies by running `composer install`.
-3. Run database migrations using `php artisan migrate`.
-4. Start the Laravel server with `php artisan serve`.
+3. Run database migrations using `php artisan migrate`. If you encounter an issue with migration, please refer to the section titled 'Database'
+4. Start the Laravel server with `php artisan serve`. 
 
 ### Frontend
 
